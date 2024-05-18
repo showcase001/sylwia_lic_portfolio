@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"}
+
+/*center h1 vertically and horizontally using the position property*/
+h1 {position:relative;
+	left:22%;}
+
+#header_background { height:80px; 
+	max-width: 1170px;
+	background-color:rgba(232,105,107,1.00);}
+
+/* hyperlink control*/
+	a:link {color:rgba(26,10,238,1.00);
+		text-decoration: underline}
+
+	a:visited {color:rgba(48,115,5,1.00);
+				text-decoration:none;}
+
+	a:hover {color:rgba(208,149,7,1.00);}
+
+header, nav, main, footer {max-width: 1170px; /*required for all 4*/
+							width: 90%; /*required for margin*/
+							margin: 0 auto; /*required for all 4*/
+							}
+
+/*Center the hyperlinks vertically AND horizontally using the position property OR the box model*/
+#nav_links {position: relative;		
+			top: 50%;
+			left: 35%;}
+
+/*Using positioning concepts, insert some space between each hyperlink and space each hyperlink evenly apart.*/
+.hyperlink_spacing{margin-left:10px}
+
+main {text-align: center;
+	/*position: relative;
+	left: 15%;*/}
+
+/*#creative_main {position: relative;
+	left: 25%;}*/
+/*#kittens {display:inline-block;;
+		float: left;
+		}*/
+/*#hawaii {position: relative;
+			left: 25%;
+			bottom: 25%;
+		}*/
+
+#logo {/*margin: 0 auto;*/ 
+		/*display: block;*/
+		/*top: 50%;*/
+		position: relative;
+		/*left: 1%;*/
+		}
+
+#footer_links{float:left;	/*Use the float property to position the hyperlinks to the left-hand side of the footer */
+				position:absolute; /*Center the hyperlinks VERTICALLY using the position property or the box model*/
+				/*top:40%;*/}
+
+#copyright{float:right; /*Use the float property to position the copyright information to the right-hand side of the footer*/
+			position:relative; /*Center the copyright information VERTICALLY using the position property or the box model */
+			/*top: 20%;*/
+			bottom: 40%;} /*Align copyright with footer hyperlinks horizontally*/
